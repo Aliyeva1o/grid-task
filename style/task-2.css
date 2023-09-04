@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 800px;
+    height: 600px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: beige;
+    gap: 10px;
+}
+header{
+    grid-area: 1/span 6;
+    background-color: rgb(67, 67, 232);
+}
+main{
+    background-color: rgb(65, 167, 65);
+    grid-column: 2/5;
+}
+aside{
+    background-color: blueviolet;
+    grid-area: 2/-3;
+}
+.twin-1{
+    background-color: orange;
+    grid-area: 3/-3;
+    grid-column: -2/-4;
+}
+.twin-2{
+    background-color: orange;
+    grid-area: 3/-6;
+    grid-column: -4/-6;
+}
+footer{
+    background-color:blue ;
+    grid-area: 4/span 6;
+}

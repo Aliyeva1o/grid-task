@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 20px auto;
+    width: 1000px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "header header header header header header"
+    "img img img text text text"
+    "lists lists lists text text text"
+    "lists lists lists read read read"
+    "section section section section section section"
+    "section section section section section section"
+     "footer footer footer footer footer footer"; 
+}
+header {
+    grid-area: header;
+    /* height: 91px; */
+    display: flex;
+    padding: 30px 19px;
+    color: #000000;
+    justify-content: space-between;
+    align-items: center;
+    gap: 83px;
+ }
+ 
+ .navbar, .navbar ul, .navbar .register-side{
+     display: flex;
+     align-items: center;
+ }
+ 
+ .navbar {
+     justify-content: space-between;
+     flex-grow: 1;
+ }
+ 
+ .navbar ul {
+     gap: 21px;
+     list-style-type: none;
+ }
+ 
+ .navbar ul a, .navbar .register-side a {
+     color: #000000;
+ }
+ 
+ .navbar .register-side {
+     gap: 45px;
+ }
+ 
+ .register-side button {
+     display: flex;
+     gap: 15px;
+     padding: 15px 20px;
+     background-color: #fa7ea9;
+     align-items: center;
+     border: none;
+     border-radius: 5px;
+ }
+ 
+ .register-side button span {
+     font-weight: 700;
+     color: #000000;
+ }
+
+ .img{
+    width: 300px;
+    grid-area: img;
+    height: 300px; 
+    background-color: rgb(129, 201, 201);
+ }
+ .text{
+    height: 350px;
+    grid-area: text;
+    background-color: rgb(200, 200, 200);
+ }
+ aside{
+    grid-area:lists;
+    width: 300px;
+    background-color: rgb(172, 110, 39);
+ }
+ ul li {
+    list-style-type: none;
+ }
+ .view{
+    grid-area:read;
+    display: flex;
+    background-color: rgb(207, 130, 130);
+ }
+  section{  
+    height: 450px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+    background-color: aquamarine;
+    grid-area: section;
+ } 
+ .imgs:nth-child(1){
+    background-color: rgb(195, 255, 0);
+ }
+ .imgs:nth-child(2){
+    background-color: aqua;
+ }
+ .imgs:nth-child(3){
+    background-color: rgb(78, 116, 116);
+ }
+ .imgs:nth-child(4){
+    background-color: aqua;
+ }
+ .imgs:nth-child(5){
+    background-color: rgb(255, 255, 255);
+ }
+ .imgs:nth-child(6){
+    background-color: #fa7ea9;
+ }
+ .imgs:nth-child(7){
+    background-color: rgb(248, 118, 11);
+ }
+ footer{
+    height: 50px;
+    grid-area:footer;
+    background-color: blue;
+ } 

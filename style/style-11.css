@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 600px;
+    display:grid;
+    grid-template-areas:auto auto auto auto auto auto auto auto auto auto auto; 
+    gap: 7px;
+    background-color: rgb(255, 255, 255);
+}
+.box{
+    color: azure;
+    font-size: 30px;
+    text-align: center;
+}
+.box:nth-child(1) {
+    background-color: rgb(137, 19, 88);
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+
+.box:nth-child(2) {
+    background-color: rgb(255, 19, 196);
+    grid-column-start:3;
+    grid-column-end:6;
+    grid-row-start: 1;
+    grid-row-end:3;
+}
+
+.box:nth-child(3) {
+    background-color: rgb(194, 91, 50);
+    grid-row-start: 1;
+    grid-row-end:5;
+    grid-column-start: 6;
+    grid-column-end: 10;
+}
+
+.box:nth-child(4) {
+    background-color: rgb(255, 234, 0);
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 10;
+    grid-column-end: 12;
+}
+
+.box:nth-child(5) {
+    background-color: rgb(23, 115, 44);
+    grid-row-start: 2;
+    grid-row-end:3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.box:nth-child(6) {
+    background-color: rgb(42, 93, 124);
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 10;
+    grid-column-end:12;
+}
+
+.box:nth-child(7) {
+    background-color: rgb(86, 159, 44);
+    grid-column-start: 1;
+    grid-column-end:3 ;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.box:nth-child(8) {
+    background-color: rgb(62, 148, 41);
+    grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.box:nth-child(9) {
+    background-color:rgb(65, 205, 220) ;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.box:nth-child(10) {
+    background-color: rgb(73, 244, 156);
+    grid-column-start: 10;
+    grid-column-end:12;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.box:nth-child(11) {
+    background-color:rgb(114, 11, 152) ;
+    grid-column-start: 1;
+    grid-column-end:6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.box:nth-child(12) {
+    background-color:rgb(250, 23, 23) ;
+    grid-column-start: 10;
+    grid-column-end:12;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 700px;
+    display:grid;
+    grid-template-areas:auto auto auto auto auto auto; 
+    gap: 9px;
+    background-color: rgb(255, 255, 255);
+}
+.box:nth-child(1) {
+    /* grid-area:box-1; */
+    background-color: red;
+    grid-column-start: -4;
+    grid-column-end: -7;
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+
+.box:nth-child(2) {
+    /* grid-area:box-2; */
+    background-color: rgb(46, 46, 47);
+    grid-column-start: -1;
+    grid-column-end: -4;
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+
+.box:nth-child(3) {
+    /* grid-area:box-3; */
+    background-color: rgb(5, 162, 73);
+    grid-row-start: 2;
+    grid-row-end:7;
+    grid-column-start: -6;
+    grid-column-end: -7;
+}
+
+.box:nth-child(4) {
+    /* grid-area: box-4; */
+    background-color: rgb(37, 76, 249);
+    grid-row-start: 2;
+    grid-row-end:4;
+    grid-column-start: -2;
+    grid-column-end: -6;
+}
+
+.box:nth-child(5) {
+    /* grid-area: box-5; */
+    background-color: rgb(255, 0, 0);
+    grid-row-start: 2;
+    grid-row-end:3;
+    grid-column-start: -1;
+    grid-column-end: -2;
+}
+
+.box:nth-child(6) {
+    /* grid-area: box-6; */
+    background-color: rgb(229, 118, 118);
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: -5;
+    grid-column-end: -6;
+}
+
+.box:nth-child(7) {
+    /* grid-area: box-7; */
+    background-color: rgb(229, 128, 128);
+    grid-column-start: -2;
+    grid-column-end:-3 ;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.box:nth-child(8) {
+    /* grid-area: box-8; */
+    background-color: red;
+    grid-column-start: -1;
+    grid-column-end:-2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.box:nth-child(9) {
+    /* grid-area: box-9; */
+    background-color:rgb(239, 136, 136) ;
+    grid-column-start: -4;
+    grid-column-end:-5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.box:nth-child(10) {
+    /* grid-area: box-8; */
+    background-color: rgb(250, 149, 149);
+    grid-column-start: -1;
+    grid-column-end:-2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.box:nth-child(11) {
+    /* grid-area: box-9; */
+    background-color:rgb(255, 96, 43) ;
+    grid-column-start: -1;
+    grid-column-end:-6;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}

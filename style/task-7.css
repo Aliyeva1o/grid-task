@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 10px auto;
+    width: 400px;
+    height: 500px;
+    display:grid;
+    grid-template-columns:auto auto;
+    gap: 8px;
+    background-color: rgb(255, 255, 255);
+}
+.box:nth-child(1) {
+    background-color: rgb(235, 180, 29);
+    border-bottom:8px solid rgb(99, 95, 95) ;
+}
+
+.box:nth-child(2) {
+    background-color: rgb(125, 68, 218);
+    border-bottom:8px solid rgb(72, 175, 146) ;
+}
+
+.box:nth-child(3) {
+    background-color: rgb(72, 175, 146);
+    border-bottom:8px solid rgb(229, 93, 40) ;
+}
+
+.box:nth-child(4) {
+    background-color: rgb(229, 93, 40);
+    border-bottom:8px solid rgb(72, 175, 146) ;
+}
